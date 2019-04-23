@@ -8,22 +8,21 @@
     <main>
       <h4>Search by Title or Author</h4>
       <form action="/searches" method="post">
-        <input type="text" name="search" placeholder="Enter a title or author" required>
+        <input type="text" name="search" placeholder="Enter a title or author">
         <fieldset>
           <label for="title">
             <span>Title</span>
-            <input type="radio" name="search" value="title" required>
+            <input type="radio" name="search" value="title" >
           </label>
         </fieldset>
         <fieldset>
           <label for="author">
             <span>Author</span>
-            <input type="radio" name="search" value="author" required>
+            <input type="radio" name="search" value="author" >
           </label>
         </fieldset>
         <button type="submit">Search the Google Books API</button>
       </form>
-      <p><%= listOfNumbers %></p>
     </main>
   </body>
 </html>
